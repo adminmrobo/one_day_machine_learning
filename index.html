@@ -455,6 +455,49 @@ table.dt{border-collapse:collapse;margin:0 auto;font-size:15px;font-variant-nume
 .legend{margin:6px 2px 0}
 .mathbox .eqbig{word-break:keep-all;overflow-wrap:normal}
 @media (max-width:520px){.mathbox .eqbig{font-size:17px}.mathbox .eqbig.small{font-size:14px}}
+
+/* ---- 밝은 바탕 ---- */
+:root{--bg:#ffffff;--panel:#f6f7fb;--panel2:#eceef5;--rule:#d5d8e3;--text:#1d1e2c;--muted:#5d6078;
+  --stain:#a437a4;--gfp:#0f8a4f;--eye:#d23a2a;--amber:#a86400;--info:#1f5fbf;--accent:#3b62c4;
+  --c-doc:#7a3fd6;--c-asst:#d6367f;--c-fly:#c93030;--c-robo:#0f8f9c;--c-sia:#5a5a6e;--c-moa:#a8741f;color-scheme:light}
+nav.top{background:rgba(255,255,255,.9)}
+.lead{color:#3a3c50}
+.hexno{background:linear-gradient(160deg,#5b46a8,#3a3f66);color:#fff}
+.hexno small{color:#d9dbf0}
+.cwrap{background:#f3f4f9;background-image:linear-gradient(rgba(93,96,120,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(93,96,120,.09) 1px,transparent 1px);background-size:24px 24px}
+.pair .tag.fly{background:rgba(210,58,42,.10);color:#b3301f}
+.pair .tag.nn{background:rgba(164,55,164,.10);color:#8a2a8a}
+.caution b,.trap .traphd b,.qi .fb.no,.qi .bt.wrong,.bridge.field h4,.dt .tagd,.tn.no{color:var(--eye)}
+.cards b{color:var(--eye)}.cards em{color:var(--stain)}
+.kgitem p{color:#3a3c50}
+#tip{background:#fff;box-shadow:0 8px 24px rgba(30,32,60,.18)}
+#study{background:rgba(255,255,255,.96);box-shadow:0 6px 18px rgba(30,32,60,.15)}
+.star{background:#f1b646;color:#1d1a22}
+.stampd{color:#8a5a00;background:rgba(241,182,70,.22);border-color:rgba(168,100,0,.6)}
+.three{background:linear-gradient(135deg,rgba(241,182,70,.16),rgba(31,95,191,.05));border-color:rgba(168,100,0,.45)}
+.explain{background:rgba(241,182,70,.10);border-color:rgba(168,100,0,.4)}
+.explain .lim{border-top-color:rgba(168,100,0,.4)}
+.why .easy{background:rgba(15,138,79,.08)}
+.mathbox .try{background:rgba(241,182,70,.13)}
+.bt[aria-pressed=true],.bt.primary{background:rgba(15,138,79,.10)}
+.lvtag.g{border-color:rgba(15,138,79,.5)}
+.trap{background:rgba(210,58,42,.05);border-color:rgba(210,58,42,.45)}
+.exam{background:linear-gradient(135deg,rgba(122,63,214,.08),rgba(31,95,191,.04));border-color:rgba(122,63,214,.45)}
+.exam .qi{border-color:rgba(122,63,214,.3)}
+.qi{border-color:rgba(31,95,191,.3)}
+.dt td.fill{background:rgba(241,182,70,.28)}
+.dt tr.dup td{background:rgba(210,58,42,.08)}
+.tn.ok{background:rgba(15,138,79,.08)}.tn.no{background:rgba(210,58,42,.08)}
+.svmfig{background:#f3f4f9}
+.kgitem.hl{background:rgba(31,95,191,.08)}
+.badge.ok{border-color:rgba(15,138,79,.5)}.badge.no{border-color:rgba(168,100,0,.5)}
+.xrow{background:#eef0f7;border:1px solid var(--rule)}
+.hiddencast .c{background:#eef0f7;border-color:var(--rule)}
+header.hero::before{opacity:.5}
+/* 장면 그림(밤의 연구실)은 그림이므로 어두운 채로 둔다 */
+.gscene{border-color:#2a2c44}
+.gscene .gcap span{color:#b9b7d0}
+.gscene .ctag{color:#f1b646}
 </style>
 </head><body>
 <div id="prog" aria-hidden="true"></div>
@@ -621,7 +664,7 @@ table.dt{border-collapse:collapse;margin:0 auto;font-size:15px;font-variant-nume
 <section class="panel" id="p1">
   <h3>직접 해 보기 — 합격 기준, 누가 정하나</h3>
   <div class="cwrap"><canvas id="c1" aria-label="가로축은 공부 시간입니다. 응시자마다 점이 하나씩 있고 합격은 초록, 불합격은 빨강입니다. 세로선이 합격 기준입니다"></canvas></div>
-  <p class="small muted legend"><span style="color:#5ee39c">●</span> 합격 · <span style="color:#f0604d">■</span> 불합격 · <span style="color:#f1b646">○</span> 노란 테두리는 틀린 예측</p>
+  <p class="small muted legend"><span style="color:#12a05e">●</span> 합격 · <span style="color:#d23a2a">■</span> 불합격 · <span style="color:#b06a00">○</span> 노란 테두리는 틀린 예측</p>
   <div class="ctrl">
     <div class="group"><span class="glabel">기준 시간</span><input type="range" id="s1" min="0.5" max="9" step="0.25" value="3" aria-label="합격 기준 시간"><span class="val" id="v1"></span></div>
     <div class="group"><button class="bt" id="b1rule">선배의 규칙 (3시간)</button><button class="bt primary" id="b1learn">데이터로 기준 찾기</button></div>
@@ -717,7 +760,7 @@ table.dt{border-collapse:collapse;margin:0 auto;font-size:15px;font-variant-nume
 <section class="panel" id="p3">
   <h3>직접 해 보기 — 외운 모델과 기준을 찾은 모델</h3>
   <div class="cwrap"><span class="stampd">설명용 모형 · 실제 데이터 아님</span><canvas id="c3" aria-label="응시자 40명이 공부 시간 순서로 놓여 있습니다. 속이 찬 점은 훈련 데이터, 테두리만 있는 점은 시험 데이터입니다"></canvas></div>
-  <p class="small muted legend">위쪽 줄은 합격, 아래쪽 줄은 불합격 · 속이 찬 점은 기출(훈련) · 빈 점은 실전(시험) · <span style="color:#f1b646">×</span>는 실전에서 틀린 예측</p>
+  <p class="small muted legend">위쪽 줄은 합격, 아래쪽 줄은 불합격 · 속이 찬 점은 기출(훈련) · 빈 점은 실전(시험) · <span style="color:#b06a00">×</span>는 실전에서 틀린 예측</p>
   <div class="ctrl">
     <div class="group" role="group" aria-label="모델"><span class="glabel">모델</span><button class="bt" data-m3="mem" aria-pressed="true">통째 암기</button><button class="bt" data-m3="thr" aria-pressed="false">기준 하나 찾기</button></div>
     <div class="group"><span class="glabel">시험 데이터 비율</span><input type="range" id="s3" min="10" max="50" step="5" value="30" aria-label="시험 데이터 비율"><span class="val" id="v3"></span></div>
@@ -944,7 +987,7 @@ table.dt{border-collapse:collapse;margin:0 auto;font-size:15px;font-variant-nume
 <section class="panel" id="p7">
   <h3>직접 해 보기 — 손잡이 두 개로 선 맞추기</h3>
   <div class="cwrap"><span class="stampd">설명용 모형 · 실제 데이터 아님</span><canvas id="c7" aria-label="가로축은 공부 시간, 세로축은 점수입니다. 응시자 여섯 명의 점과 직선, 그리고 점에서 직선까지의 세로 막대가 보입니다"></canvas></div>
-  <p class="small muted legend"><span style="color:#5ee39c">●</span> 실제 점수 · <span style="color:#82b8ff">━</span> 직선의 예측 · <span style="color:#f1b646">┃</span> 빗나간 정도</p>
+  <p class="small muted legend"><span style="color:#12a05e">●</span> 실제 점수 · <span style="color:#1f5fbf">━</span> 직선의 예측 · <span style="color:#b06a00">┃</span> 빗나간 정도</p>
   <div class="ctrl">
     <div class="group"><span class="glabel">기울기 m</span><input type="range" id="s7m" min="0" max="15" step="0.1" value="5" aria-label="기울기"><span class="val" id="v7m"></span></div>
     <div class="group"><span class="glabel">0시간 점수 c</span><input type="range" id="s7c" min="20" max="70" step="0.5" value="50" aria-label="절편"><span class="val" id="v7c"></span></div>
@@ -1181,7 +1224,7 @@ table.dt{border-collapse:collapse;margin:0 auto;font-size:15px;font-variant-nume
 <section class="panel" id="p11">
   <h3>직접 해 보기 — 물음표를 옮기고 이웃 수를 바꾸기</h3>
   <div class="cwrap"><span class="stampd">설명용 모형 · 실제 데이터 아님</span><canvas id="c11" style="touch-action:none;cursor:crosshair" aria-label="가로축은 공부 시간, 세로축은 수면 시간입니다. 합격한 사람은 초록 동그라미, 불합격한 사람은 빨간 세모입니다. 물음표가 새 응시자이고, 가까운 이웃과 선으로 이어져 있습니다"></canvas></div>
-  <p class="small muted legend"><span style="color:#5ee39c">●</span> 합격 · <span style="color:#f0604d">▲</span> 불합격 · <span style="color:#f1b646">○</span> 노란 테두리는 뽑힌 이웃</p>
+  <p class="small muted legend"><span style="color:#12a05e">●</span> 합격 · <span style="color:#d23a2a">▲</span> 불합격 · <span style="color:#b06a00">○</span> 노란 테두리는 뽑힌 이웃</p>
   <div class="ctrl">
     <div class="group" role="group" aria-label="이웃 수"><span class="glabel">이웃 수 K</span><button class="bt" data-k="1" aria-pressed="false">1</button><button class="bt" data-k="3" aria-pressed="true">3</button><button class="bt" data-k="5" aria-pressed="false">5</button><button class="bt" data-k="15" aria-pressed="false">15</button></div>
     <div class="group"><button class="bt" id="b11" aria-pressed="false">수면을 분으로 적기 (× 60)</button><button class="bt" id="b11r">물음표 제자리로</button></div>
@@ -1293,14 +1336,14 @@ table.dt{border-collapse:collapse;margin:0 auto;font-size:15px;font-variant-nume
       <p class="easy">쉽게 말하면, SVM은 두 마을 사이에 가장 넓은 도로를 내는 일이고, 나이브 베이즈는 단서를 보고 확률을 거꾸로 따지는 일입니다.</p>
       <div class="svmfig"><span class="stampd">설명용 도식</span>
       <svg viewBox="0 0 300 170" role="img" aria-label="왼쪽 아래의 빨간 세모 무리와 오른쪽 위의 초록 동그라미 무리 사이에 실선 경계가 있고, 양옆 점선이 길의 폭을 나타냅니다. 점선에 닿은 점 세 개가 노란 테두리로 표시되어 있습니다">
-        <line x1="60" y1="165" x2="230" y2="5" stroke="#eceaf3" stroke-width="2"/>
-        <line x1="24" y1="165" x2="194" y2="5" stroke="#9d9bb8" stroke-width="1.2" stroke-dasharray="5 4"/>
-        <line x1="96" y1="165" x2="266" y2="5" stroke="#9d9bb8" stroke-width="1.2" stroke-dasharray="5 4"/>
-        <g fill="#f0604d"><path d="M40 110l6 10h-12z"/><path d="M36 124l6 10h-12z"/><path d="M30 142l6 10h-12z"/><path d="M78 96l6 10h-12z"/><path d="M52 78l6 10h-12z"/></g>
-        <path d="M100 82l6 10h-12z" fill="#f0604d" stroke="#f1b646" stroke-width="2.5"/>
-        <g fill="#5ee39c"><circle cx="232" cy="74" r="5.5"/><circle cx="256" cy="52" r="5.5"/><circle cx="246" cy="104" r="5.5"/><circle cx="270" cy="88" r="5.5"/><circle cx="216" cy="118" r="5.5"/></g>
-        <circle cx="181" cy="85" r="5.5" fill="#5ee39c" stroke="#f1b646" stroke-width="2.5"/><circle cx="151" cy="113" r="5.5" fill="#5ee39c" stroke="#f1b646" stroke-width="2.5"/>
-        <text x="196" y="160" fill="#9d9bb8" font-size="11">점선 사이 = 길의 폭(마진)</text>
+        <line x1="60" y1="165" x2="230" y2="5" stroke="#1d1e2c" stroke-width="2"/>
+        <line x1="24" y1="165" x2="194" y2="5" stroke="#5d6078" stroke-width="1.2" stroke-dasharray="5 4"/>
+        <line x1="96" y1="165" x2="266" y2="5" stroke="#5d6078" stroke-width="1.2" stroke-dasharray="5 4"/>
+        <g fill="#d23a2a"><path d="M40 110l6 10h-12z"/><path d="M36 124l6 10h-12z"/><path d="M30 142l6 10h-12z"/><path d="M78 96l6 10h-12z"/><path d="M52 78l6 10h-12z"/></g>
+        <path d="M100 82l6 10h-12z" fill="#d23a2a" stroke="#f1b646" stroke-width="2.5"/>
+        <g fill="#12a05e"><circle cx="232" cy="74" r="5.5"/><circle cx="256" cy="52" r="5.5"/><circle cx="246" cy="104" r="5.5"/><circle cx="270" cy="88" r="5.5"/><circle cx="216" cy="118" r="5.5"/></g>
+        <circle cx="181" cy="85" r="5.5" fill="#12a05e" stroke="#f1b646" stroke-width="2.5"/><circle cx="151" cy="113" r="5.5" fill="#12a05e" stroke="#f1b646" stroke-width="2.5"/>
+        <text x="196" y="160" fill="#5d6078" font-size="11">점선 사이 = 길의 폭(마진)</text>
       </svg></div>
     </div>
     <div class="mathbox"><h4>수학 수식을 어려워하는 조수가 대신 물어봅니다</h4>
@@ -1576,14 +1619,14 @@ function num(v){return (Math.abs(v-Math.round(v))<1e-9?String(Math.round(v)):Str
 function mean(a){return a.reduce(function(s,v){return s+v;},0)/a.length;}
 function median(a){var b=a.slice().sort(function(x,y){return x-y;}),n=b.length;return n%2?b[(n-1)/2]:(b[n/2-1]+b[n/2])/2;}
 function sd(a){var m=mean(a);return Math.sqrt(mean(a.map(function(v){return (v-m)*(v-m);})));}
-var G='#5ee39c',R='#f0604d',A='#f1b646',B='#82b8ff',M='#9d9bb8',T='#eceaf3';
+var G='#12a05e',R='#d23a2a',A='#b06a00',B='#1f5fbf',M='#5d6078',T='#1d1e2c';
 var RD=[]; function reg(fn){RD.push(fn); fn();}
 window.addEventListener('resize',function(){RD.forEach(function(f){f();});});
 function plot(c,H,xr,yr,o){o=o||{};var W=fit(c,H),x=c.getContext('2d');x.clearRect(0,0,W,H);var L=o.L==null?44:o.L,Rr=16,Tp=o.T==null?34:o.T,Bt=o.B==null?34:o.B;
   var p={W:W,H:H,x:x,L:L,R:Rr,T:Tp,B:Bt,X:function(v){return L+(v-xr[0])/(xr[1]-xr[0])*(W-L-Rr);},Y:function(v){return H-Bt-(v-yr[0])/(yr[1]-yr[0])*(H-Tp-Bt);},
     iX:function(px){return xr[0]+(px-L)/(W-L-Rr)*(xr[1]-xr[0]);},iY:function(py){return yr[0]+(H-Bt-py)/(H-Tp-Bt)*(yr[1]-yr[0]);}};
   return p;}
-function axes(p,xt,yt,xl,yl){var x=p.x;x.strokeStyle='rgba(157,155,184,.55)';x.lineWidth=1;x.beginPath();x.moveTo(p.L,p.T-6);x.lineTo(p.L,p.H-p.B);x.lineTo(p.W-p.R+4,p.H-p.B);x.stroke();
+function axes(p,xt,yt,xl,yl){var x=p.x;x.strokeStyle='rgba(93,96,120,.6)';x.lineWidth=1;x.beginPath();x.moveTo(p.L,p.T-6);x.lineTo(p.L,p.H-p.B);x.lineTo(p.W-p.R+4,p.H-p.B);x.stroke();
   x.fillStyle=M;x.font='500 11px '+FONT;x.textAlign='center';(xt||[]).forEach(function(v){x.fillText(num(v),p.X(v),p.H-p.B+15);x.beginPath();x.moveTo(p.X(v),p.H-p.B);x.lineTo(p.X(v),p.H-p.B+4);x.stroke();});
   x.textAlign='right';(yt||[]).forEach(function(v){x.fillText(num(v),p.L-6,p.Y(v)+4);x.beginPath();x.moveTo(p.L-4,p.Y(v));x.lineTo(p.L,p.Y(v));x.stroke();});
   x.textAlign='right';if(xl)x.fillText(xl,p.W-p.R,p.H-4);x.textAlign='left';if(yl)x.fillText(yl,6,p.T-14);}
@@ -1638,8 +1681,8 @@ function best1(d){var u=d.h.slice().sort(function(a,b){return a-b;}),bt=u[0],bo=
 (function(){var c=$('#c1'),s=$('#s1'),useNew=false,learned=false;
   function data(){return useNew?{h:D1.h.concat(D1N.h),y:D1.y.concat(D1N.y)}:D1;}
   function draw(){var d=data(),t=+s.value,p=plot(c,190,[0,10],[0,1],{L:16,T:20,B:34}),x=p.x,mid=(p.T+p.H-p.B)/2;
-    x.fillStyle='rgba(94,227,156,.08)';x.fillRect(p.X(t),p.T,p.W-p.R-p.X(t),p.H-p.B-p.T);
-    x.strokeStyle='rgba(157,155,184,.55)';x.beginPath();x.moveTo(p.L,p.H-p.B);x.lineTo(p.W-p.R,p.H-p.B);x.stroke();
+    x.fillStyle='rgba(15,138,79,.08)';x.fillRect(p.X(t),p.T,p.W-p.R-p.X(t),p.H-p.B-p.T);
+    x.strokeStyle='rgba(93,96,120,.6)';x.beginPath();x.moveTo(p.L,p.H-p.B);x.lineTo(p.W-p.R,p.H-p.B);x.stroke();
     x.fillStyle=M;x.font='500 11px '+FONT;x.textAlign='center';[0,2,4,6,8,10].forEach(function(v){x.fillText(v+'시간',p.X(v),p.H-p.B+16);});
     var seen={};d.h.forEach(function(h,i){var k=h+'_'+d.y[i];seen[k]=(seen[k]||0)+1;var off=(seen[k]-1)*15,Y=d.y[i]?mid-22-off:mid+22+off,ok=(h>=t?1:0)===d.y[i],isNew=i>=D1.h.length;
       if(d.y[i])dot(x,p.X(h),Y,6.5,G,isNew);else{if(isNew){x.strokeStyle=R;x.lineWidth=2;x.strokeRect(p.X(h)-5.5,Y-5.5,11,11);}else{x.fillStyle=R;x.fillRect(p.X(h)-5.5,Y-5.5,11,11);}}
@@ -1685,7 +1728,7 @@ function run3(model,ratio){var n=D3.pts.length,k=Math.round(n*ratio),te=D3.ord.s
 (function(){var c=$('#c3'),s=$('#s3'),model='mem';
   function upd(){var ratio=+s.value/100,r=run3(model,ratio);$('#v3').textContent=s.value+'%';
     var p=plot(c,200,[0,10],[0,1],{L:16,T:24,B:34}),x=p.x,mid=(p.T+p.H-p.B)/2;
-    x.strokeStyle='rgba(157,155,184,.55)';x.beginPath();x.moveTo(p.L,p.H-p.B);x.lineTo(p.W-p.R,p.H-p.B);x.stroke();
+    x.strokeStyle='rgba(93,96,120,.6)';x.beginPath();x.moveTo(p.L,p.H-p.B);x.lineTo(p.W-p.R,p.H-p.B);x.stroke();
     x.fillStyle=M;x.font='500 11px '+FONT;x.textAlign='center';[0,2,4,6,8,10].forEach(function(v){x.fillText(v+'시간',p.X(v),p.H-p.B+16);});
     if(r.thr!=null){x.strokeStyle=A;x.lineWidth=2;x.setLineDash([6,4]);x.beginPath();x.moveTo(p.X(r.thr),p.T);x.lineTo(p.X(r.thr),p.H-p.B);x.stroke();x.setLineDash([]);label(x,'찾은 기준 '+f1(r.thr)+'시간',Math.min(p.X(r.thr)+6,p.W-120),p.T+10,A);}
     function put(q,test){var Y=q.y?mid-26:mid+26;Y+=test?(q.y?-16:16):0;dot(x,p.X(q.x),Y,5.5,q.y?G:R,test);if(test&&r.pred(q)!==q.y){x.strokeStyle=A;x.lineWidth=2;x.beginPath();x.moveTo(p.X(q.x)-8,Y-8);x.lineTo(p.X(q.x)+8,Y+8);x.moveTo(p.X(q.x)+8,Y-8);x.lineTo(p.X(q.x)-8,Y+8);x.stroke();}}
@@ -1753,7 +1796,7 @@ function mse(m,c,X,Y){return mean(X.map(function(x,i){var e=Y[i]-(m*x+c);return 
 (function(){var c7=$('#c7'),sm=$('#s7m'),sc=$('#s7c'),best=false;
   function upd(){var m=+sm.value,c=+sc.value,e=mse(m,c,RX,RY),p=plot(c7,270,[0,7],[30,105]),x=p.x;$('#v7m').textContent=f1(m);$('#v7c').textContent=f1(c);
     axes(p,[0,1,2,3,4,5,6,7],[40,60,80,100],'공부 시간','점수');
-    RX.forEach(function(h,i){var yh=m*h+c;x.strokeStyle='rgba(241,182,70,.8)';x.lineWidth=2;x.beginPath();x.moveTo(p.X(h),p.Y(RY[i]));x.lineTo(p.X(h),p.Y(Math.max(30,Math.min(105,yh))));x.stroke();});
+    RX.forEach(function(h,i){var yh=m*h+c;x.strokeStyle='rgba(176,106,0,.85)';x.lineWidth=2;x.beginPath();x.moveTo(p.X(h),p.Y(RY[i]));x.lineTo(p.X(h),p.Y(Math.max(30,Math.min(105,yh))));x.stroke();});
     x.save();x.beginPath();x.rect(p.L,p.T-8,p.W-p.L-p.R,p.H-p.B-p.T+8);x.clip();x.strokeStyle=B;x.lineWidth=2.5;x.beginPath();x.moveTo(p.X(0),p.Y(c));x.lineTo(p.X(7),p.Y(m*7+c));x.stroke();x.restore();
     RX.forEach(function(h,i){dot(x,p.X(h),p.Y(RY[i]),5.5,G);});
     kp($('#k7'),[['r',f1(e),'벌점 (MSE)'],['a','약 '+f1(Math.sqrt(e))+'점','제곱을 풀면: 평균적으로 빗나간 점수'],['g',f1(m*5+c)+'점','5시간 공부한 사람의 예측'],['m',f1(m)+'점','한 시간 더 공부하면 오르는 점수']]);
@@ -1777,10 +1820,10 @@ var M8=(function(){var a=0,b=0;RX.forEach(function(x,i){a+=x*(RY[i]-C8);b+=x*x;}
   function upd(){var p=plot(c,270,[-6,22],[0,1400]),x=p.x,m=path[path.length-1],e=loss8(m);
     axes(p,[-4,0,4,8,12,16,20],[0,400,800,1200],'기울기 m','벌점');
     x.save();x.beginPath();x.rect(p.L,p.T-8,p.W-p.L-p.R,p.H-p.B-p.T+8);x.clip();x.strokeStyle=B;x.lineWidth=2.5;x.beginPath();for(var v=-6;v<=22;v+=0.25){var Y=p.Y(loss8(v));v===-6?x.moveTo(p.X(v),Y):x.lineTo(p.X(v),Y);}x.stroke();x.restore();
-    x.strokeStyle='rgba(94,227,156,.6)';x.setLineDash([4,4]);x.beginPath();x.moveTo(p.X(M8),p.T);x.lineTo(p.X(M8),p.H-p.B);x.stroke();x.setLineDash([]);label(x,'바닥 m ≈ '+fn(M8,2),p.X(M8)+6,p.T+4,G);
+    x.strokeStyle='rgba(15,138,79,.75)';x.setLineDash([4,4]);x.beginPath();x.moveTo(p.X(M8),p.T);x.lineTo(p.X(M8),p.H-p.B);x.stroke();x.setLineDash([]);label(x,'바닥 m ≈ '+fn(M8,2),p.X(M8)+6,p.T+4,G);
     function cx(v){return p.X(Math.max(-6,Math.min(22,v)));}function cy(v){return p.Y(Math.min(1400,loss8(v)));}
-    x.strokeStyle='rgba(241,182,70,.8)';x.lineWidth=1.5;x.beginPath();path.forEach(function(v,i){i?x.lineTo(cx(v),cy(v)):x.moveTo(cx(v),cy(v));});x.stroke();
-    path.forEach(function(v,i){dot(x,cx(v),cy(v),i===path.length-1?7:3.5,i===path.length-1?A:'rgba(241,182,70,.7)');});
+    x.strokeStyle='rgba(176,106,0,.85)';x.lineWidth=1.5;x.beginPath();path.forEach(function(v,i){i?x.lineTo(cx(v),cy(v)):x.moveTo(cx(v),cy(v));});x.stroke();
+    path.forEach(function(v,i){dot(x,cx(v),cy(v),i===path.length-1?7:3.5,i===path.length-1?A:'rgba(176,106,0,.6)');});
     var outside=m<-6||m>22;if(outside)label(x,'공이 화면 밖으로 나갔습니다 '+(m>22?'→':'←'),m>22?p.W-p.R-190:p.L+8,p.T+22,R);
     var big=Math.abs(m)>=1000;
     kp($('#k8'),[['m',(path.length-1)+'걸음','지금까지 걸음 수'],['a',big?(m>0?'':'−')+'1,000 넘음':fn(m,2),'지금 기울기 m'],['r',e>=1e6?'100만 넘음':f1(e),'지금 벌점 (MSE)'],['g',fn(M8,2),'바닥의 m · 벌점 '+f1(loss8(M8))]]);
@@ -1799,11 +1842,11 @@ var M8=(function(){var a=0,b=0;RX.forEach(function(x,i){a+=x*(RY[i]-C8);b+=x*x;}
 /* ---------- 9칸 범위 밖과 이상치 ---------- */
 (function(){var c9=$('#c9'),s=$('#s9'),out=false;
   function upd(){var X=out?RX.concat([12]):RX,Y=out?RY.concat([40]):RY,b=ls(X,Y),b0=ls(RX,RY),q=+s.value,yq=b.m*q+b.c,lo=Math.min.apply(null,X),hi=Math.max.apply(null,X),p=plot(c9,280,[0,13],[20,125]),x=p.x;$('#v9').textContent=num(q)+'시간';
-    x.fillStyle='rgba(130,184,255,.08)';x.fillRect(p.X(lo),p.T,p.X(hi)-p.X(lo),p.H-p.B-p.T);label(x,'기록이 있는 구간',p.X(lo)+4,p.H-p.B-6,B);
+    x.fillStyle='rgba(31,95,191,.07)';x.fillRect(p.X(lo),p.T,p.X(hi)-p.X(lo),p.H-p.B-p.T);label(x,'기록이 있는 구간',p.X(lo)+4,p.H-p.B-6,B);
     axes(p,[0,2,4,6,8,10,12],[40,60,80,100,120],'공부 시간','점수');
     x.strokeStyle='rgba(240,96,77,.7)';x.setLineDash([5,4]);x.beginPath();x.moveTo(p.L,p.Y(100));x.lineTo(p.W-p.R,p.Y(100));x.stroke();x.setLineDash([]);label(x,'만점 100점',p.W-p.R-66,p.Y(100)-5,R);
     x.save();x.beginPath();x.rect(p.L,p.T-8,p.W-p.L-p.R,p.H-p.B-p.T+8);x.clip();
-    if(out){x.strokeStyle='rgba(157,155,184,.6)';x.lineWidth=1.5;x.setLineDash([3,4]);x.beginPath();x.moveTo(p.X(0),p.Y(b0.c));x.lineTo(p.X(13),p.Y(b0.m*13+b0.c));x.stroke();x.setLineDash([]);}
+    if(out){x.strokeStyle='rgba(93,96,120,.6)';x.lineWidth=1.5;x.setLineDash([3,4]);x.beginPath();x.moveTo(p.X(0),p.Y(b0.c));x.lineTo(p.X(13),p.Y(b0.m*13+b0.c));x.stroke();x.setLineDash([]);}
     x.strokeStyle=B;x.lineWidth=2.5;x.beginPath();x.moveTo(p.X(0),p.Y(b.c));x.lineTo(p.X(13),p.Y(b.m*13+b.c));x.stroke();x.restore();
     X.forEach(function(h,i){dot(x,p.X(h),p.Y(Y[i]),5.5,i>=6?R:G);});
     var yc=Math.max(20,Math.min(125,yq));x.strokeStyle=A;x.setLineDash([3,3]);x.beginPath();x.moveTo(p.X(q),p.H-p.B);x.lineTo(p.X(q),p.Y(yc));x.stroke();x.setLineDash([]);dot(x,p.X(q),p.Y(yc),7,A);
@@ -1824,9 +1867,9 @@ function sig(z){return 1/(1+Math.exp(-z));}
 (function(){var c=$('#c10'),sx=$('#s10x'),st=$('#s10t');
   function upd(){var h=+sx.value,t=+st.value,z=1.2*h-5.4,pr=sig(z),p=plot(c,260,[0,10],[0,1]),x=p.x;$('#v10x').textContent=num(h)+'시간';$('#v10t').textContent=fn(t,2);
     axes(p,[0,2,4,6,8,10],[0,0.5,1],'공부 시간','합격 확률');
-    x.strokeStyle='rgba(241,182,70,.8)';x.setLineDash([6,4]);x.beginPath();x.moveTo(p.L,p.Y(t));x.lineTo(p.W-p.R,p.Y(t));x.stroke();x.setLineDash([]);label(x,'판정 기준 '+fn(t,2),p.L+8,p.Y(t)-6,A);
+    x.strokeStyle='rgba(176,106,0,.85)';x.setLineDash([6,4]);x.beginPath();x.moveTo(p.L,p.Y(t));x.lineTo(p.W-p.R,p.Y(t));x.stroke();x.setLineDash([]);label(x,'판정 기준 '+fn(t,2),p.L+8,p.Y(t)-6,A);
     x.strokeStyle=B;x.lineWidth=2.5;x.beginPath();for(var v=0;v<=10;v+=0.1){var Y=p.Y(sig(1.2*v-5.4));v===0?x.moveTo(p.X(v),Y):x.lineTo(p.X(v),Y);}x.stroke();
-    x.strokeStyle='rgba(157,155,184,.5)';x.setLineDash([3,3]);x.beginPath();x.moveTo(p.X(h),p.H-p.B);x.lineTo(p.X(h),p.Y(pr));x.stroke();x.setLineDash([]);
+    x.strokeStyle='rgba(93,96,120,.5)';x.setLineDash([3,3]);x.beginPath();x.moveTo(p.X(h),p.H-p.B);x.lineTo(p.X(h),p.Y(pr));x.stroke();x.setLineDash([]);
     dot(x,p.X(h),p.Y(pr),7.5,pr>=t?G:R);label(x,pct(pr),p.X(h)+(h>8?-44:10),p.Y(pr)+(pr>0.85?18:-8),T);
     kp($('#k10'),[['m',fn(z,2),'직선 점수 z'],['a',pct(pr),'합격일 확률'],[pr>=t?'g':'r',pr>=t?'합격':'불합격','기준 '+fn(t,2)+'로 가른 판정'],['g','4.5시간','확률이 50%가 되는 자리']]);
     $('#eq10').innerHTML='z = 1.2 × '+num(h)+' − 5.4 = <b>'+fn(z,2)+'</b> → σ(z) = 1 ÷ (1 + e<sup>'+fn(-z,2)+'</sup>) = <i>'+fn(pr,2)+'</i>';
@@ -1844,10 +1887,10 @@ function knn(q,k,unit){var sy=unit?60:1,a=K11.map(function(p,i){var dx=p[0]-q[0]
 (function(){var c=$('#c11'),Q0=[3.2,5.8],q=Q0.slice(),k=3,unit=false,P=null,drag=false;
   function upd(){var r=knn(q,k,unit),p=plot(c,320,[0,10],[0,10]),x=p.x;P=p;
     axes(p,[0,2,4,6,8,10],[0,2,4,6,8,10],'공부 시간','수면 시간'+(unit?' (그림은 시간 단위 그대로)':''));
-    r.nb.forEach(function(n){var pt=K11[n.i];x.strokeStyle='rgba(241,182,70,.75)';x.lineWidth=1.5;x.beginPath();x.moveTo(p.X(q[0]),p.Y(q[1]));x.lineTo(p.X(pt[0]),p.Y(pt[1]));x.stroke();});
+    r.nb.forEach(function(n){var pt=K11[n.i];x.strokeStyle='rgba(176,106,0,.8)';x.lineWidth=1.5;x.beginPath();x.moveTo(p.X(q[0]),p.Y(q[1]));x.lineTo(p.X(pt[0]),p.Y(pt[1]));x.stroke();});
     K11.forEach(function(pt){pt[2]?dot(x,p.X(pt[0]),p.Y(pt[1]),6,G):tri(x,p.X(pt[0]),p.Y(pt[1]),7,R);});
     r.nb.forEach(function(n){var pt=K11[n.i];x.strokeStyle=A;x.lineWidth=2;x.beginPath();x.arc(p.X(pt[0]),p.Y(pt[1]),11,0,Math.PI*2);x.stroke();});
-    dot(x,p.X(q[0]),p.Y(q[1]),11,r.ans?'rgba(94,227,156,.25)':'rgba(240,96,77,.25)');x.strokeStyle=T;x.lineWidth=2;x.beginPath();x.arc(p.X(q[0]),p.Y(q[1]),11,0,Math.PI*2);x.stroke();
+    dot(x,p.X(q[0]),p.Y(q[1]),11,r.ans?'rgba(15,138,79,.2)':'rgba(210,58,42,.2)');x.strokeStyle=T;x.lineWidth=2;x.beginPath();x.arc(p.X(q[0]),p.Y(q[1]),11,0,Math.PI*2);x.stroke();
     x.fillStyle=T;x.font='700 14px '+FONT;x.textAlign='center';x.fillText('?',p.X(q[0]),p.Y(q[1])+5);
     kp($('#k11'),[['g',r.pass+'표','합격 이웃'],['r',r.fail+'표','불합격 이웃'],[r.ans?'g':'r',r.ans?'합격':'불합격','다수결의 답'],['m','공부 '+f1(q[0])+' · 수면 '+f1(q[1]),'물음표의 자리 (시간)']]);
     var m=[['m','이웃 '+k+'명 가운데 합격 '+r.pass+'명, 불합격 '+r.fail+'명입니다. 답은 <b>'+(r.ans?'합격':'불합격')+'</b>입니다.']];
@@ -1894,7 +1937,7 @@ function vote(n,p){var need=Math.floor(n/2)+1,tot=0,lc=function(k){var s=0;for(v
 
 /* ---------- 지식 색인 ---------- */
 var KG=JSON.parse($('#kg-raw').textContent);
-var TYPES={Concept:['개념','#d672d6'],Method:['방법','#5ee39c'],Task:['문제','#82b8ff'],Metric:['지표','#f1b646'],Claim:['주장','#f0604d'],Term:['용어','#c9c9d6'],Question:['질문','#ff86b8'],Analogy:['비유','#e8c48a'],Limitation:['한계','#ff9b6a'],Work:['문헌','#9ab8ff'],Simulation:['실험','#57d0dc'],Dataset:['데이터','#7fd1a8']};
+var TYPES={Concept:['개념','#d672d6'],Method:['방법','#12a05e'],Task:['문제','#2f7fe0'],Metric:['지표','#d69a12'],Claim:['주장','#f0604d'],Term:['용어','#8a8ca3'],Question:['질문','#ff86b8'],Analogy:['비유','#b8862f'],Limitation:['한계','#ff9b6a'],Work:['문헌','#4f78d8'],Simulation:['실험','#1aa3b0'],Dataset:['데이터','#3aa878']};
 (function(){var on={}; Object.keys(TYPES).forEach(function(k){on[k]=true;});
   var chips=$('#kgchips'); Object.keys(TYPES).forEach(function(k){ if(!KG.nodes.some(function(n){return n.type===k;})) return;
     var b=document.createElement('button'); b.className='kgchip'; b.setAttribute('aria-pressed','true'); b.innerHTML='<span class="kgdot" style="background:'+TYPES[k][1]+'"></span>'+TYPES[k][0];
@@ -1928,10 +1971,10 @@ var TYPES={Concept:['개념','#d672d6'],Method:['방법','#5ee39c'],Task:['문�
   function sx(p,W){return 20+(p.x-mnx)/(mxx-mnx+1e-9)*(W-40);} function sy(p,H){return 20+(p.y-mny)/(mxy-mny+1e-9)*(H-40);}
   var hi=null;
   function draw(){var W=fit(c,380), H=380, x=c.getContext('2d'); x.clearRect(0,0,W,H);
-    E.forEach(function(e){var a=P[idx[e.s]],b=P[idx[e.o]]; var h=hi&&(e.s===hi||e.o===hi); x.strokeStyle=h?'rgba(241,182,70,.9)':'rgba(157,155,184,.22)'; x.lineWidth=h?1.8:1;
+    E.forEach(function(e){var a=P[idx[e.s]],b=P[idx[e.o]]; var h=hi&&(e.s===hi||e.o===hi); x.strokeStyle=h?'rgba(168,100,0,.95)':'rgba(93,96,120,.3)'; x.lineWidth=h?1.8:1;
       x.beginPath(); x.moveTo(sx(a,W),sy(a,H)); x.lineTo(sx(b,W),sy(b,H)); x.stroke();});
     P.forEach(function(p){var col=(TYPES[p.n.type]||['','#888'])[1]; x.fillStyle=col; x.beginPath(); x.arc(sx(p,W),sy(p,H),p.n.id===hi?7:4.5,0,Math.PI*2); x.fill();
-      if(p.n.type==='Method'||p.n.id===hi){x.fillStyle='#eceaf3'; x.font='500 10.5px '+FONT; x.textAlign='center'; x.fillText(p.n.label.ko,sx(p,W),sy(p,H)-8);}});}
+      if(p.n.type==='Method'||p.n.id===hi){x.fillStyle='#1d1e2c'; x.font='500 10.5px '+FONT; x.textAlign='center'; x.fillText(p.n.label.ko,sx(p,W),sy(p,H)-8);}});}
   c.addEventListener('pointerdown',function(ev){var rc=c.getBoundingClientRect(), mx=ev.clientX-rc.left, my=ev.clientY-rc.top, W=rc.width, H=380, best=null, bd=400;
     P.forEach(function(p){var dx=sx(p,W)-mx, dy=sy(p,H)-my, d=dx*dx+dy*dy; if(d<bd){bd=d;best=p;}}); if(best){hi=best.n.id; on[best.n.type]=true; $('#kgq').value=''; list(hi); draw();}});
   $('#kglegend').innerHTML=Object.keys(cnt).map(function(k){return TYPES[k]?'<span><span class="kgdot" style="background:'+TYPES[k][1]+'"></span>'+TYPES[k][0]+'</span>':'';}).join('')+'<span>선 = 관계 · 노드를 누르면 목록에서 펼침</span>';
