@@ -33,26 +33,21 @@
     {
       "id": "cover",
       "role": "cover",
-      "path": "",
+      "path": "cover_one_day_ml_am.webp",
       "embedded_in": "index.html",
-      "key": "figure.cover2[data-img=cover_one_day_ml_am]",
+      "key": "figure.cover2 img.c2img",
       "size": [
         1600,
-        900
+        893
       ],
       "characters": [
-        "doc",
-        "asst",
-        "fly",
-        "jupanbot",
-        "sia",
-        "moa"
+        "sia"
       ],
-      "robot": "jupanbot-v2",
+      "robot": null,
       "prompt_en": "docs/COVER_one_day_ml_am.md",
       "source_of": null,
-      "status": "todo",
-      "note": "지금은 코드로 그린 표지 (모눈 바탕 + 움직이는 도감 그림 8개 + 캐릭터 팩 표정). 일러스트를 받으면 교체"
+      "status": "partial",
+      "note": "선정: 하품하는 시아와 모아. 지금은 기준 그림 「05_Yawning」(시아만). 모아가 함께 있는 그림을 받으면 교체"
     },
     {
       "id": "og",
@@ -65,18 +60,13 @@
         630
       ],
       "characters": [
-        "doc",
-        "asst",
-        "fly",
-        "jupanbot",
-        "sia",
-        "moa"
+        "sia"
       ],
-      "robot": "jupanbot-v2",
+      "robot": null,
       "prompt_en": "",
       "source_of": "cover",
       "status": "done",
-      "note": "코드 표지를 화면 그대로 찍어 만든 공유 미리보기"
+      "note": "표지 그림(하품하는 시아)에서 만듦. 표지를 바꾸면 다시 만듦"
     },
     {
       "id": "thumb",
@@ -89,18 +79,13 @@
         400
       ],
       "characters": [
-        "doc",
-        "asst",
-        "fly",
-        "jupanbot",
-        "sia",
-        "moa"
+        "sia"
       ],
-      "robot": "jupanbot-v2",
+      "robot": null,
       "prompt_en": "",
       "source_of": "cover",
       "status": "done",
-      "note": "코드 표지를 화면 그대로 찍어 만든 썸네일"
+      "note": "표지 그림(하품하는 시아)에서 만듦. 표지를 바꾸면 다시 만듦"
     },
     {
       "id": "sc_period1",

@@ -16,6 +16,8 @@
 <meta property="og:url" content="https://adminmrobo.github.io/one_day_machine_learning/">
 <link rel="canonical" href="https://adminmrobo.github.io/one_day_machine_learning/">
 <meta property="og:image" content="https://adminmrobo.github.io/one_day_machine_learning/og_one_day_ml_am.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -533,6 +535,9 @@ footer{background:rgba(255,255,255,.6)}
 .stage2 .dash{margin:0;grid-template-columns:repeat(var(--n,3),1fr)}
 @media (max-width:860px){.stage2{grid-template-columns:1fr;margin:64px 0 -36px}}
 @media (max-width:520px){.stage2 .dash{grid-template-columns:repeat(2,1fr)}}
+.c2img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--rule);margin:12px 0 6px;background:var(--panel2)}
+.cover2{padding-bottom:18px}
+.cover2 figcaption{margin:0 2px}
 </style>
 </head><body>
 <div id="prog" aria-hidden="true"></div>
@@ -543,11 +548,12 @@ footer{background:rgba(255,255,255,.6)}
   <a href="#report">성적표</a><a href="#sum">정리</a><a href="#kg">지식 색인</a><a href="#export">꾸러미</a>
 </nav>
 
-<!-- 0-1 글 표지 (코드로 그린 표지: 움직이는 도감 그림 + 캐릭터 팩) -->
-<figure class="cover2" id="cover" data-img="cover_one_day_ml_am" role="img" aria-label="모눈 공책 바탕에 움직이는 작은 도표 여덟 개가 놓여 있습니다. 기준선이 움직이고, 직선이 점에 맞춰지고, 공이 골짜기를 내려갑니다. 아래에 초파리 연구원, 조수 하루, 인턴 시아와 모아, 주판봇, 박사가 나란히 서 있습니다"><div class="in">
-  <div class="c2head"><span class="c2k">ONE-DAY NOTE · 오전반</span><b>하루에 다 끝내는 머신러닝 서머리 노트</b><span class="c2s">박사의 쪽지시험 전날, 인턴 둘의 벼락치기 — 그림을 누르면 그 칸으로 갑니다</span></div>
+<!-- 0-1 글 표지 (일러스트: 하품하는 시아 · 모아는 그림을 받으면 더함) + 움직이는 도감 그림 -->
+<figure class="cover2" id="cover" data-img="cover_one_day_ml_am"><div class="in">
+  <div class="c2head"><span class="c2k">ONE-DAY NOTE · 오전반</span><b>하루에 다 끝내는 머신러닝 서머리 노트</b><span class="c2s">박사의 쪽지시험 전날, 인턴 둘의 벼락치기</span></div>
+  <img class="c2img" src="cover_one_day_ml_am.webp" width="1600" height="893" alt="밝은 낮의 사무실. 창밖으로 도시가 보이는 책상에서 인턴 시아가 한 손으로 입을 가리고 크게 하품합니다. 책상에는 모니터 두 대와 서류 더미, 분홍색 컵이 놓여 있습니다">
+  <figcaption class="small muted">그림 아래 작은 도표를 누르면 그 칸으로 갑니다.</figcaption>
   <div class="dash"><a class="tile" href="#r1"><canvas data-fig="rule" aria-hidden="true"></canvas><b><i>1칸</i>규칙과 데이터</b></a><a class="tile" href="#r3"><canvas data-fig="split" aria-hidden="true"></canvas><b><i>3칸</i>기출과 실전</b></a><a class="tile" href="#r7"><canvas data-fig="lr" aria-hidden="true"></canvas><b><i>7칸</i>직선 긋기</b></a><a class="tile" href="#r11"><canvas data-fig="knn" aria-hidden="true"></canvas><b><i>11칸</i>가까운 이웃</b></a><a class="tile opt" href="#r5"><canvas data-fig="clean" aria-hidden="true"></canvas><b><i>5칸</i>빈칸·중복</b></a><a class="tile opt" href="#r8"><canvas data-fig="gd" aria-hidden="true"></canvas><b><i>8칸</i>경사 하강</b></a><a class="tile opt" href="#r10"><canvas data-fig="sig" aria-hidden="true"></canvas><b><i>10칸</i>합격 확률</b></a><a class="tile opt" href="#r12"><canvas data-fig="tree" aria-hidden="true"></canvas><b><i>12칸</i>스무고개 나무</b></a></div>
-  <div class="c2cast"><img data-who="fly" data-mood="e09" alt=""><img data-who="asst" data-mood="e12" alt=""><img data-who="sia" data-mood="e10" alt=""><img data-who="moa" data-mood="e24" alt=""><img data-who="robo" data-mood="e09" alt=""><img data-who="doc" data-mood="e16" alt=""></div>
 </div></figure>
 
 <header class="hero">
