@@ -1,48 +1,45 @@
 # 「하루에 다 끝내는 머신러닝 서머리 노트 — 오전반」 이미지 제작 명세서
 
 - 페이지: `index.html` (단일 파일) · 분야: 인공지능 · 형식: 미션형(쪽지시험 대비, 대결 없음) · 주 앵커: 생활·현장(시험 공부)
+- 표지·교시 머리: 일러스트 대신 코드로 그린 움직이는 도감 그림 (밝은 모눈 바탕)
 - 대결 없음 — 아웃트로 표정: 박사 `doc_e16`, 초파리 `fly_e09`, 주판봇 `robo_e09`, 시아 `sia_e17`(졸음), 모아 `moa_e12`, 조수 `asst_e16`
 - 만든 날: 2026-11-13 · 캐릭터 팩 1.4 (`fruitfly-lab-expressions` @ 86d04ac)
 
-## 1. 그림체와 고정 외형
-캐릭터 팩 `CHAR_lab4.md` 18-3·18-4 그대로. 16비트 RPG풍 픽셀아트, 굵은 어두운 외곽선, 밤의 연구실 조명. 그림 안에 글자·숫자·로고를 넣지 않습니다. 로봇은 주판봇(베이지 상자형)만 씁니다.
+## 1. 그림체와 색
+- 화면 체계는 머신러닝 모델 도감(`machine_learning_model_atlas`)과 같습니다. 바탕 `#F3F6F8` 모눈, 카드 `#FFFFFF`, 글자 `#16212B`, 강조 파랑 `#1E55C8`.
+- 도표 색: 두 집단은 노랑 `#F5C518`·파랑 `#1AA3F0`, 모델이 그은 선은 주황 `#F26A12`, 강조(틀린 예측·뽑힌 이웃·움직이는 공)는 분홍 `#E8479B`, 보조선은 회색 `#9AA7B3`.
+- 캐릭터는 캐릭터 팩 `CHAR_lab4.md` 18-3·18-4 그대로(16비트 RPG풍 픽셀아트). 로봇은 주판봇(베이지 상자형)만 씁니다.
+- 일러스트를 새로 그릴 때는 밝은 바탕으로 그립니다. 밤의 연구실 배경은 이 페이지에 쓰지 않습니다.
 
 ## 2. 필요한 그림 전체
 
 | 키 | 판 | 쓰는 자리 | 상태 | 비고 |
 |---|---|---|---|---|
-| `cover_one_day_ml_am` | L 1920×1080 | 페이지 맨 위 표지 | **새로 그림** | 지금은 대체 표지(칠판 시간표 + 캐릭터 여섯). 지시문 `COVER_one_day_ml_am.md` |
-| `og_one_day_ml_am` | K 1200×630 | 공유 미리보기 | 표지에서 자름 | 표지 반영 때 `og:image` 메타 추가 |
-| `thumb_one_day_ml_am` | I 600×400 | 목차·현황판 썸네일 | 표지에서 자름 | |
-| `sc_period1` | E 1200×800 | 1교시 머리 장면 | 새로 그림 · 선택 | 지금은 코드로 그린 칠판 장면 |
-| `sc_period2` | E 1200×800 | 2교시 머리 장면 | 새로 그림 · 선택 | 〃 |
-| `sc_period3` | E 1200×800 | 3교시 머리 장면 | 새로 그림 · 선택 | 〃 |
-| `sc_period4` | E 1200×800 | 4교시 머리 장면 | 새로 그림 · 선택 | 〃 |
+| `cover_one_day_ml_am` | L 1920×1080 | 페이지 맨 위 표지 | 코드로 그림 · 일러스트는 **선택** | 지금: 모눈 바탕 + 움직이는 도감 그림 8개 + 캐릭터 여섯. 지시문 `COVER_one_day_ml_am.md` |
+| `og_one_day_ml_am.jpg` | K 1200×630 | 공유 미리보기 | **완료** | 코드 표지를 찍어 만듦. `og:image` 연결됨 |
+| `thumb_one_day_ml_am.webp` | I 600×400 | 목차·현황판 썸네일 | **완료** | 코드 표지를 찍어 만듦 |
+| `sc_period1`~`sc_period4` | — | 교시 머리 | **완료 (코드)** | 그 교시 칸마다 하나씩 움직이는 도감 그림. 따로 그릴 그림 없음 |
 | 표정 37장 | A~D | 말풍선·대화·식구 카드·암기 카드 | **캐릭터 팩 재사용** | 아래 4번 목록. 새로 그릴 것 없음 |
 
-만드는 순서: ① 표지 → 그림체 확인 → ② 교시 장면 네 장(같은 대화에서, 표지를 참고 그림으로 함께 올림).
+## 3. 움직이는 도감 그림 13개 (코드, `canvas[data-fig]`)
 
-## 3. 새로 그릴 그림 상세
-
-### 3-1. `cover_one_day_ml_am` — 시험 전날의 공부 책상
-`COVER_one_day_ml_am.md`의 프롬프트를 그대로 씁니다. 반영: 1600×900 WebP 220 KB 이하, `alt`는 지시문의 대체 글.
-
-### 3-2. 교시 장면 네 장 (선택)
-공통 머리말을 붙이고 장면 문장만 바꿉니다.
-
-```
-Wide 3:2 scene, 16-bit RPG style pixel art matching the attached reference images and the attached cover, thick dark outlines, night research lab with purple light and a warm desk lamp. Keep every character design exactly as in the references. No text, no letters, no numbers, no logos, no real brands.
-Scene: {장면}
-```
-
-| 키 | {장면} | 대체 글 |
+| 키 | 칸 | 움직임 |
 |---|---|---|
-| `sc_period1` | The black-haired maid intern and the beige-haired maid intern sit at a study desk sorting two piles of cards: one pile has small answer tags attached, the other has none. The chibi scientist watches from behind with a thinking pose; the pink-haired researcher stands beside them. A sealed box sits on a shelf, tied with a ribbon. | 시아와 모아가 답표가 붙은 카드와 붙지 않은 카드를 두 더미로 나누고, 박사와 조수가 지켜봅니다. 선반에는 봉인한 상자가 있습니다 |
-| `sc_period2` | The beige-haired maid intern wipes a large table of blank tiles with a cloth so that empty tiles fill in, while the black-haired maid intern dusts away one oversized tile with a feather duster. The boxy beige CRT robot counts tiles on a wooden abacus; the fruit fly researcher drinks coffee and watches. | 모아가 걸레로 빈칸을 채우고 시아가 먼지떨이로 튀는 타일 하나를 털어 냅니다. 주판봇이 주판으로 세고 초파리 연구원이 지켜봅니다 |
-| `sc_period3` | The black-haired maid intern holds a long ruler against glowing dots floating above the desk, trying to line it up; the beige-haired maid intern points at one dot far away from the others with sparkling eyes. The pink-haired researcher explains with one hand raised; the boxy beige CRT robot holds its abacus. | 시아가 떠 있는 점들에 긴 자를 대어 보고, 모아가 멀리 떨어진 점 하나를 가리킵니다. 조수가 설명하고 주판봇이 주판을 듭니다 |
-| `sc_period4` | Glowing green circles and red triangles float in two loose groups above the desk. The beige-haired maid intern cheers and stretches a ribbon between the two groups like a road; the black-haired maid intern is yawning, half asleep on her notebook. The fruit fly researcher points at one triangle hiding among the circles; the pink-haired researcher smiles. | 초록 동그라미와 빨간 세모 무리 사이에 모아가 리본으로 길을 냅니다. 시아는 공책 위에서 하품하고, 초파리 연구원이 동그라미 속에 숨은 세모 하나를 가리킵니다 |
+| `rule` | 1 | 주황 기준선이 점들 사이를 오가며 자리를 찾는다 |
+| `types` | 2 | 회색 점들이 세 무리로 차례로 색을 입는다 |
+| `split` | 3 | 오른쪽 점 넷이 빈 점으로 바뀌고 분홍 점선 상자에 봉인된다 |
+| `flow` | 4 | 일곱 상자가 차례로 주황으로 켜진다 |
+| `clean` | 5 | 점선 빈칸 두 곳이 분홍으로 채워진다 |
+| `scale` | 6 | 막대 다섯 개의 높이가 같은 눈금으로 맞춰진다 |
+| `lr` | 7 | 주황 직선이 점에 맞춰지고 회색 세로 막대가 짧아진다 |
+| `gd` | 8 | 분홍 공이 주황 그릇 곡선을 한 걸음씩 내려간다 |
+| `extra` | 9 | 분홍 점이 기록 구간 밖 점선을 따라 나간다 |
+| `sig` | 10 | 점이 주황 S자 곡선을 타고 오르며 색이 바뀐다 |
+| `knn` | 11 | 물음표 둘레의 분홍 원이 커지며 이웃을 뽑는다 |
+| `tree` | 12 | 주황 세로선, 가로선이 차례로 영역을 가른다 |
+| `svm` | 13 | 주황 경계선 양옆 점선이 벌어지며 길이 넓어진다 |
 
-반영: 1200×800 WebP, 한 장 90 KB 이하. `figure.gscene[data-img=sc_period{n}]`의 안쪽을 `<img>`로 바꾸고 `figcaption`은 그대로 둡니다.
+보이는 그림만 움직이고, "움직임 줄이기" 설정이면 정지 그림으로 둡니다. 모두 설명용 도식이며 실제 데이터가 아닙니다.
 
 ## 4. 캐릭터 팩에서 재사용한 표정 (새로 그릴 것 없음)
 
@@ -56,24 +53,25 @@ Scene: {장면}
 | 인턴 모아 `moa` | e01 · e04 · e07 · e09 · e12 · e13 · e16 · e19 · e24 |
 | 미공개 `x1`·`x2`·`x3` | x1 e13 · x2 e01, e13 · x3 e09, e13, e16 |
 
-주판봇은 기준 표정 9종(E13·E01·E03·E02·E04·E09·E16·E15·E24) 안에서만 골랐습니다. 미공개 식구는 버튼을 눌러야 보이는 자리(식구 명부, 쉬는 시간 암기 카드)에만, 밝은 카드 위에 둡니다.
+주판봇은 기준 표정 9종(E13·E01·E03·E02·E04·E09·E16·E15·E24) 안에서만 골랐습니다. 미공개 식구는 버튼을 눌러야 보이는 자리(식구 명부, 쉬는 시간 암기 카드)에만 둡니다.
 
 ## 5. 일관성 지침
 - 인턴 두 명이 주인공입니다. 장면마다 두 사람을 가운데에 둡니다.
-- 박사는 출제자입니다. 교시 장면에서는 뒤에서 지켜보는 자리에만 둡니다.
+- 박사는 출제자입니다. 표지에서는 뒤에서 지켜보는 자리에만 둡니다.
 - 시험 결과(누가 몇 점인지)를 암시하는 그림을 넣지 않습니다.
 - 박사·조수·시아·모아는 좌우 반전하지 않습니다(머리 장식·브릿지 위치가 바뀝니다).
 
 ## 6. 넘겨받은 뒤 처리
-표지 → `cover_manifest.json`의 `cover` 항목 `status`를 `done`으로, `path`에 파일 이름을 적습니다. 교시 장면도 같습니다. 표지를 넣을 때 `twitter:card`를 `summary_large_image`로 바꾸고 `og:image`를 더합니다.
+표지 일러스트를 받으면 `cover_manifest.json`의 `cover` 항목 `status`를 `done`으로, `path`에 파일 이름을 적고, 공유 미리보기와 썸네일을 새 표지에서 다시 자릅니다.
 
 ## 7. 체크리스트
 - [ ] 그림 안에 글자·숫자·로고 없음
 - [ ] 여섯 캐릭터 외형이 참고 그림과 같음 (주판봇: 베이지 상자형, 주판알 안테나, 무한궤도)
 - [ ] 흰 둥근 로봇·금화 없음
-- [ ] 미공개 X1~X3가 표지·교시 장면에 없음
+- [ ] 미공개 X1~X3가 표지에 없음
+- [ ] 바탕이 밝음 (밤 배경 아님), 도표 색이 노랑·파랑·주황·분홍 체계
 - [ ] 얼굴과 손이 안전 영역 안
 - [ ] 파일 크기: 표지 220 KB, 장면 90 KB 이하 · 페이지 전체 600 KB 이하
 
 ## 8. 매니페스트
-`cover_manifest.json` (저장소 맨 위 폴더) — 표지 1, 교시 장면 4, 온톨로지 위치(`index.html`의 `#kg`·`#export`), 언어 `ko`.
+`cover_manifest.json` (저장소 맨 위 폴더) — 표지 1, 공유 미리보기 1, 썸네일 1, 교시 머리 4, 온톨로지 위치(`index.html`의 `#kg`·`#export`), 언어 `ko`.
