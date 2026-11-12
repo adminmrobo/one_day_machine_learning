@@ -44,7 +44,7 @@ AI 연구실 해설 · 쪽지시험 대비 · 비전공자용
 |---|---|
 | `index.html` | 오전반 해설 페이지 (단일 파일, 외부 라이브러리 없음) |
 | `cover_one_day_ml_am.webp` | 표지 그림. 하품하는 시아 (모아를 더한 그림으로 바꿀 예정) |
-| `og_one_day_ml_am.jpg` · `thumb_one_day_ml_am.webp` | 공유 미리보기(1200×630)와 썸네일(600×400). 표지 그림에서 만듦 |
+| `og_one_day_ml_am.jpg` · `thumb_one_day_ml_am.webp` | 공유 미리보기(1200×630)와 썸네일(600×400). 시아 픽셀 그림과 머신러닝 도표 배경 |
 | `docs/IMG_one_day_ml_am.md` | 이미지 제작 명세서 |
 | `docs/COVER_one_day_ml_am.md` | 표지 그림 지시문 |
 | `cover_manifest.json` | 표지·온톨로지·언어 현황 (현황판 연결) |

@@ -17,9 +17,8 @@
 ## 지금 상태
 
 - `cover_one_day_ml_am.webp` (1600×893, 97 KB): 기준 그림 그대로 넣었습니다. **시아만 있습니다.**
-- `og_one_day_ml_am.jpg` (1200×630): 같은 그림에 제목을 얹어 만들었습니다.
-- `thumb_one_day_ml_am.webp` (600×400): 같은 그림에서 시아 쪽을 잘랐습니다.
-- 모아가 함께 있는 그림을 받으면 세 파일을 모두 바꿉니다.
+- `og_one_day_ml_am.jpg` (1200×630)와 `thumb_one_day_ml_am.webp` (600×400): 시아 픽셀 그림(캐릭터 팩 E17 졸림·하품)에 머신러닝 도표를 옅게 깐 판입니다. 딥러닝 판(모아)과 짝을 맞췄습니다.
+- 모아가 함께 있는 그림을 받으면 표지 그림만 바꿉니다.
 
 ## 시아 + 모아 그림 요청 (Genspark에 붙여 넣기 ↓)
 
@@ -55,4 +54,4 @@ No text, no letters, no numbers, no logos, no real brands, no cigarettes, no alc
 
 ## 반영
 
-1600×900 안팎 WebP 220 KB 이하로 줄여 `cover_one_day_ml_am.webp`를 바꿔 넣습니다. `index.html`은 그대로 두고 `alt`만 위 대체 글로 고칩니다. 공유 미리보기와 썸네일은 새 그림에서 다시 만듭니다.
+1600×900 안팎 WebP 220 KB 이하로 줄여 `cover_one_day_ml_am.webp`를 바꿔 넣습니다. `index.html`은 그대로 두고 `alt`만 위 대체 글로 고칩니다. 공유 미리보기와 썸네일은 시아 픽셀 판을 그대로 둡니다.

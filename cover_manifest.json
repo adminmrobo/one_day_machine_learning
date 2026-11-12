@@ -64,9 +64,9 @@
       ],
       "robot": null,
       "prompt_en": "",
-      "source_of": "cover",
+      "source_of": null,
       "status": "done",
-      "note": "표지 그림(하품하는 시아)에서 만듦. 표지를 바꾸면 다시 만듦"
+      "note": "시아 픽셀 그림(E17 졸림·하품) + 머신러닝 도표 배경으로 코드에서 만듦. 딥러닝 판(모아)과 짝"
     },
     {
       "id": "thumb",
@@ -83,9 +83,9 @@
       ],
       "robot": null,
       "prompt_en": "",
-      "source_of": "cover",
+      "source_of": null,
       "status": "done",
-      "note": "표지 그림(하품하는 시아)에서 만듦. 표지를 바꾸면 다시 만듦"
+      "note": "시아 픽셀 그림(E17 졸림·하품) + 머신러닝 도표 배경으로 코드에서 만듦. 딥러닝 판(모아)과 짝"
     },
     {
       "id": "sc_period1",
