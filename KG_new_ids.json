@@ -1,0 +1,786 @@
+{
+ "note": "KG_00_registry.json에 더할 항목 (하루에 다 끝내는 머신러닝 오전반). in_registry가 true인 ID는 이미 있으니 pages만 더하면 됩니다.",
+ "updated": "2026-11-13",
+ "entries": [
+  {
+   "id": "lab:question/one-day-ml-summary",
+   "type": "Question",
+   "label_ko": "하루 만에 머신러닝 입문 범위를 정리할 수 있나",
+   "label_en": "Can the ML basics be summarised in one day?",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:question/is-accuracy-enough",
+   "type": "Question",
+   "label_ko": "정확도 하나로 모델을 평가해도 되나",
+   "label_en": "Is accuracy alone enough to judge a model?",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:question/which-classifier-when",
+   "type": "Question",
+   "label_ko": "여섯 가지 분류 방법 중 무엇을 언제 고르나",
+   "label_en": "Which classifier should be chosen when?",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:question/how-large-test-set",
+   "type": "Question",
+   "label_ko": "시험 데이터를 얼마나 떼어야 점수를 믿을 수 있나",
+   "label_en": "How large must the test set be to trust the score?",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/machine-learning",
+   "type": "Method",
+   "label_ko": "머신러닝",
+   "label_en": "Machine learning",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/supervised-learning",
+   "type": "Method",
+   "label_ko": "지도 학습",
+   "label_en": "Supervised learning",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/unsupervised-learning",
+   "type": "Method",
+   "label_ko": "비지도 학습",
+   "label_en": "Unsupervised learning",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/semi-supervised-learning",
+   "type": "Method",
+   "label_ko": "준지도 학습",
+   "label_en": "Semi-supervised learning",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/reinforcement-learning",
+   "type": "Method",
+   "label_ko": "강화 학습",
+   "label_en": "Reinforcement learning",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/train-test-split",
+   "type": "Method",
+   "label_ko": "훈련·시험 데이터 나누기",
+   "label_en": "Train-test split",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/missing-value-imputation",
+   "type": "Method",
+   "label_ko": "빈칸 채우기",
+   "label_en": "Missing-value imputation",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/deduplication",
+   "type": "Method",
+   "label_ko": "중복 줄 지우기",
+   "label_en": "Deduplication",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/label-encoding",
+   "type": "Method",
+   "label_ko": "번호 붙이기(레이블 인코딩)",
+   "label_en": "Label encoding",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/one-hot-encoding",
+   "type": "Method",
+   "label_ko": "칸 나누기(원-핫 인코딩)",
+   "label_en": "One-hot encoding",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/min-max-normalization",
+   "type": "Method",
+   "label_ko": "정규화(최소-최대)",
+   "label_en": "Min-max normalization",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/standardization",
+   "type": "Method",
+   "label_ko": "표준화",
+   "label_en": "Standardization (z-score)",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/linear-regression",
+   "type": "Method",
+   "label_ko": "선형 회귀",
+   "label_en": "Linear regression",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/gradient-descent",
+   "type": "Method",
+   "label_ko": "경사 하강법",
+   "label_en": "Gradient descent",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": true
+  },
+  {
+   "id": "lab:method/logistic-regression",
+   "type": "Method",
+   "label_ko": "로지스틱 회귀",
+   "label_en": "Logistic regression",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/knn",
+   "type": "Method",
+   "label_ko": "K-최근접 이웃",
+   "label_en": "K-nearest neighbors",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/decision-tree",
+   "type": "Method",
+   "label_ko": "결정 트리",
+   "label_en": "Decision tree",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/random-forest",
+   "type": "Method",
+   "label_ko": "랜덤 포레스트",
+   "label_en": "Random forest",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/svm",
+   "type": "Method",
+   "label_ko": "서포트 벡터 머신",
+   "label_en": "Support vector machine",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/naive-bayes",
+   "type": "Method",
+   "label_ko": "나이브 베이즈",
+   "label_en": "Naive Bayes",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/model",
+   "type": "Concept",
+   "label_ko": "모델",
+   "label_en": "Model",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/training-data",
+   "type": "Concept",
+   "label_ko": "훈련 데이터",
+   "label_en": "Training data",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/test-data",
+   "type": "Concept",
+   "label_ko": "시험 데이터",
+   "label_en": "Test data",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/overfitting",
+   "type": "Concept",
+   "label_ko": "과적합",
+   "label_en": "Overfitting",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": true
+  },
+  {
+   "id": "lab:concept/data-leakage",
+   "type": "Concept",
+   "label_ko": "데이터 누수",
+   "label_en": "Data leakage",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/ml-workflow",
+   "type": "Concept",
+   "label_ko": "머신러닝 작업 흐름",
+   "label_en": "Machine learning workflow",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/missing-value",
+   "type": "Concept",
+   "label_ko": "결측치",
+   "label_en": "Missing value",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/outlier",
+   "type": "Concept",
+   "label_ko": "이상치",
+   "label_en": "Outlier",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/parameter",
+   "type": "Concept",
+   "label_ko": "파라미터(손잡이)",
+   "label_en": "Parameter",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/hyperparameter",
+   "type": "Concept",
+   "label_ko": "하이퍼파라미터(설정값)",
+   "label_en": "Hyperparameter",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/learning-rate",
+   "type": "Concept",
+   "label_ko": "학습률(걸음 폭)",
+   "label_en": "Learning rate",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": true
+  },
+  {
+   "id": "lab:concept/extrapolation",
+   "type": "Concept",
+   "label_ko": "범위 밖 예측(외삽)",
+   "label_en": "Extrapolation",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/sigmoid",
+   "type": "Concept",
+   "label_ko": "시그모이드",
+   "label_en": "Sigmoid function",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": true
+  },
+  {
+   "id": "lab:concept/margin",
+   "type": "Concept",
+   "label_ko": "마진(길의 폭)",
+   "label_en": "Margin",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/bayes-theorem",
+   "type": "Concept",
+   "label_ko": "베이즈 정리",
+   "label_en": "Bayes' theorem",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:task/regression",
+   "type": "Task",
+   "label_ko": "회귀(숫자 맞히기)",
+   "label_en": "Regression",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:task/classification",
+   "type": "Task",
+   "label_ko": "분류(종류 맞히기)",
+   "label_en": "Classification",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:task/clustering",
+   "type": "Task",
+   "label_ko": "군집(묶기)",
+   "label_en": "Clustering",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:metric/mse",
+   "type": "Metric",
+   "label_ko": "평균 제곱 오차",
+   "label_en": "Mean squared error",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:metric/accuracy",
+   "type": "Metric",
+   "label_ko": "정확도",
+   "label_en": "Accuracy",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:metric/gini-impurity",
+   "type": "Metric",
+   "label_ko": "지니 불순도",
+   "label_en": "Gini impurity",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/tasting-recipe",
+   "type": "Analogy",
+   "label_ko": "맛보고 조리법 알아내기 ↔ 머신러닝",
+   "label_en": "Tasting to infer the recipe ↔ machine learning",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/past-papers-exam",
+   "type": "Analogy",
+   "label_ko": "기출과 실전 ↔ 훈련·시험 데이터",
+   "label_en": "Past papers vs real exam ↔ train/test data",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/foggy-mountain",
+   "type": "Analogy",
+   "label_ko": "안개 낀 산 내려가기 ↔ 경사 하강법",
+   "label_en": "Descending a foggy mountain ↔ gradient descent",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/ask-three-neighbours",
+   "type": "Analogy",
+   "label_ko": "옆자리 세 명에게 묻기 ↔ KNN",
+   "label_en": "Asking three neighbours ↔ KNN",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/twenty-questions",
+   "type": "Analogy",
+   "label_ko": "스무고개 ↔ 결정 트리",
+   "label_en": "Twenty questions ↔ decision tree",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/road-between-villages",
+   "type": "Analogy",
+   "label_ko": "두 마을 사이 도로 ↔ SVM",
+   "label_en": "Road between two villages ↔ SVM",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/bad-data-bad-rule",
+   "type": "Limitation",
+   "label_ko": "데이터가 틀리면 규칙도 틀린다",
+   "label_en": "Bad data gives bad rules",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/small-test-set-noise",
+   "type": "Limitation",
+   "label_ko": "시험 데이터가 적으면 점수가 운에 흔들린다",
+   "label_en": "A small test set gives a noisy score",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/outlier-pulls-line",
+   "type": "Limitation",
+   "label_ko": "튀는 한 점이 직선을 끌고 간다",
+   "label_en": "One outlier can pull the fitted line",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/linear-boundary",
+   "type": "Limitation",
+   "label_ko": "갈림선이 직선 하나다",
+   "label_en": "The decision boundary is a single line",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/knn-slow-prediction",
+   "type": "Limitation",
+   "label_ko": "기록이 많으면 답이 느리다",
+   "label_en": "Prediction is slow with many records",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/tree-memorises",
+   "type": "Limitation",
+   "label_ko": "깊은 나무는 기록을 외운다",
+   "label_en": "A deep tree memorises the data",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/independence-assumption",
+   "type": "Limitation",
+   "label_ko": "단서끼리 상관없다는 가정은 현실과 다르다",
+   "label_en": "The independence assumption rarely holds",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/train-accuracy-not-enough",
+   "type": "Claim",
+   "label_ko": "훈련 정확도만으로는 모델을 평가할 수 없다",
+   "label_en": "Training accuracy alone cannot evaluate a model",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/scaling-stats-from-train-only",
+   "type": "Claim",
+   "label_ko": "크기 맞추기 기준값은 훈련 데이터에서만 구한다",
+   "label_en": "Scaling statistics must come from training data only",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/standardization-affected-by-outliers",
+   "type": "Claim",
+   "label_ko": "표준화도 이상치에 끌려간다",
+   "label_en": "Standardization is also affected by outliers",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/knn-needs-scaling",
+   "type": "Claim",
+   "label_ko": "KNN은 크기 맞추기가 필요하다",
+   "label_en": "KNN needs feature scaling",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/forest-gains-from-decorrelation",
+   "type": "Claim",
+   "label_ko": "랜덤 포레스트의 이득은 나무들이 서로 다르게 틀리는 데서 나온다",
+   "label_en": "Random forests gain from decorrelated trees",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/posterior-depends-on-prior",
+   "type": "Claim",
+   "label_ko": "같은 단서라도 처음 비율에 따라 확률이 달라진다",
+   "label_en": "The posterior depends on the prior",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/one-day-ml-source-notes",
+   "type": "Work",
+   "label_ko": "머신러닝 필기 노트 15장 (사용자 제공 그림)",
+   "label_en": "Handwritten ML notes, 15 pages (user-provided images)",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/hastie2009elements",
+   "type": "Work",
+   "label_ko": "Hastie·Tibshirani·Friedman (2009) The Elements of Statistical Learning",
+   "label_en": "Hastie, Tibshirani & Friedman (2009) The Elements of Statistical Learning",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/breiman2001random",
+   "type": "Work",
+   "label_ko": "Breiman (2001) Random Forests",
+   "label_en": "Breiman (2001) Random Forests",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/cover1967nearest",
+   "type": "Work",
+   "label_ko": "Cover·Hart (1967) Nearest neighbor pattern classification",
+   "label_en": "Cover & Hart (1967) Nearest neighbor pattern classification",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/cortes1995support",
+   "type": "Work",
+   "label_ko": "Cortes·Vapnik (1995) Support-vector networks",
+   "label_en": "Cortes & Vapnik (1995) Support-vector networks",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/sklearn-preprocessing",
+   "type": "Work",
+   "label_ko": "scikit-learn 사용자 안내서: 데이터 전처리",
+   "label_en": "scikit-learn User Guide: Preprocessing data",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/rule-vs-learned-threshold",
+   "type": "Simulation",
+   "label_ko": "합격 기준: 사람의 규칙과 데이터로 찾은 기준",
+   "label_en": "Pass threshold: hand-written rule vs learned",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/memoriser-vs-threshold",
+   "type": "Simulation",
+   "label_ko": "통째 암기와 기준 하나 찾기의 훈련·시험 점수",
+   "label_en": "Memoriser vs threshold model on train/test",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/scaling-with-outlier",
+   "type": "Simulation",
+   "label_ko": "오타 300점을 넣은 크기 맞추기",
+   "label_en": "Scaling with a 300-point typo",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/gradient-descent-step-sizes",
+   "type": "Simulation",
+   "label_ko": "걸음 폭 네 가지로 골짜기 내려가기",
+   "label_en": "Gradient descent with four step sizes",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/knn-units",
+   "type": "Simulation",
+   "label_ko": "이웃 수와 단위를 바꾼 KNN",
+   "label_en": "KNN with different K and units",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/majority-vote",
+   "type": "Simulation",
+   "label_ko": "나무 수와 다수결 정확도",
+   "label_en": "Number of trees vs majority-vote accuracy",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/bayes-spam",
+   "type": "Simulation",
+   "label_ko": "\"무료\"가 든 메일이 스팸일 확률",
+   "label_en": "Probability that a mail with 'free' is spam",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:dataset/toy-quiz-records",
+   "type": "Dataset",
+   "label_ko": "지어낸 쪽지시험 응시 기록",
+   "label_en": "Made-up quiz records (toy data)",
+   "pages": [
+    "one_day_ml_am"
+   ],
+   "in_registry": false
+  }
+ ]
+}

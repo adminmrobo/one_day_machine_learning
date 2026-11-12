@@ -1,0 +1,155 @@
+{
+  "series_ko": "AI 연구실 해설 · 하루에 다 끝내는 시리즈",
+  "title_ko": "하루에 다 끝내는 머신러닝 서머리 노트 — 오전반",
+  "site_title": "하루에 다 끝내는 머신러닝 서머리 노트",
+  "site_url": "https://adminmrobo.github.io/one_day_machine_learning/",
+  "ontology": {
+    "pages": [
+      {
+        "path": "index.html",
+        "kg": true,
+        "export": true
+      }
+    ],
+    "files": [
+      "KG_new_ids.json"
+    ]
+  },
+  "i18n": {
+    "langs": [
+      "ko"
+    ],
+    "pages": {
+      "ko": 1
+    },
+    "readme_langs": [
+      "ko"
+    ]
+  },
+  "languages": [
+    "ko"
+  ],
+  "items": [
+    {
+      "id": "cover",
+      "role": "cover",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=cover_one_day_ml_am]",
+      "size": [
+        1600,
+        900
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/COVER_one_day_ml_am.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 대체 표지 (칠판 시간표 + 캐릭터 팩 표정)"
+    },
+    {
+      "id": "sc_period1",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_period1]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/IMG_one_day_ml_am.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 교시 머리 장면"
+    },
+    {
+      "id": "sc_period2",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_period2]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/IMG_one_day_ml_am.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 교시 머리 장면"
+    },
+    {
+      "id": "sc_period3",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_period3]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/IMG_one_day_ml_am.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 교시 머리 장면"
+    },
+    {
+      "id": "sc_period4",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_period4]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/IMG_one_day_ml_am.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 교시 머리 장면"
+    }
+  ],
+  "updated": "2026-11-13"
+}
